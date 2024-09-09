@@ -1,0 +1,8 @@
+*{margin: 0; padding: 0;}
+a{text-decoration: none; display: block; color: #333;}
+img{border: 0; display: block;}
+ul,li,ol{list-style: none;}
+body{background-color: #fff;}
+#m-wrap{display: none;}
+
+/* 가변그리드 사용 */

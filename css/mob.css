@@ -1,0 +1,286 @@
+@charset "utf-8";
+/* 850 - 960으로 수정하기 */
+@media screen and (max-width: 767px) {
+    #wrap{width: 100%;}
+    header, main, section, footer{
+        width: 100%; float: left; position: relative;
+    }
+    
+    header{
+        height: 100px;
+        text-align: center;
+        font: 900 20px/100px '';
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    #logo{
+        width: 20.850708%; height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #gnb, input{display: none;}
+    #m-wrap{display: block;}
+    #m-menu{
+        display: block;
+        width: 100px; height: 100px;
+        font: 900 50px/100px '';
+        text-align: center;
+        color: #333;
+        background-color: white;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    #m-gnb{
+        width: 100%; height: 0px;
+        font: 900 18px/60px '';
+        font-family: 'Noto Sans KR', sans-serif;
+        position: absolute; top: 100px;
+        z-index: 99;
+        overflow: hidden;
+        transition-duration: 0.5s;
+    }
+    #m-gnb>li{
+        width: 100%; height: 25%;
+        background-color: white;
+        border-top: 1px solid lightgray;
+        transition-duration: 0.5s;
+        box-sizing: border-box;
+    }
+    #m-gnb>li:last-child{
+        border-bottom: 1px solid lightgray;
+    }
+    #m-gnb>li>a{color: dimgray;}
+    #m-gnb>li:hover{background-color: gainsboro;}
+    #btn:checked ~ #m-gnb{height: 240px;}
+     /* HEADER END  */
+
+    main{
+        height: 500px;
+        background-image: url(../img/MAIN_1571903003.jpg);
+        background-repeat: no-repeat;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    #m-catch{
+        margin: 10% auto;
+        text-align: center;
+    }
+    button{
+        padding: 10px 25px;
+        background-color: rgba(100, 100, 100, 0);
+        border: 2px solid black;
+        position: absolute;
+        left: 40%;
+        cursor: pointer;
+        transition-duration: 0.5s;
+    }
+    button:hover{
+        color: ghostwhite;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    /* MAIN END */
+
+    #s1{
+        height: 1500px;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(243, 243, 243);
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    #s1-catch{
+        font-size: 20px;
+        position: absolute;
+        bottom: 93%;
+    }
+
+    #s1-catch>span, #s2-catch>span,
+    #s3-catch>span, #s4-catch>span{
+        font-weight: 900;
+    }
+
+    #banner{
+        width: 90%; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #banner>li{
+        width: 84.021439%; height: 261px;
+        overflow: hidden;
+        cursor: pointer;
+        margin-bottom: 50px;
+    }
+    #banner>li>img{transition-duration: 1.5s;}
+
+    .b-catch{
+        position: relative;
+        left: 7%; bottom: 40%;
+        color: white;
+    }
+    #banner>li:hover img{
+        transform: scale(1.2);
+        filter: brightness(0.5);
+    }
+    #banner>li:hover>.b-catch{
+        animation: bm 1.0s forwards;
+    }
+    #banner>li h2,#banner>li p{transition-duration: 1.5s;}
+    #banner>li:hover h2,#banner>li:hover p{
+        transform: translateY(-20px)
+    }
+
+    /* SECTION 1 END (배너) */
+
+    #s2{
+        height: 3200px;
+        display: flex;
+        justify-content: center;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    #s2-catch{
+        font-size: 20px;
+        position: absolute;
+        bottom: 95%;
+    }
+
+    #goods{
+        width: 57.945820%; height: 1000px;
+        position: absolute;
+        top: 200px;
+    }
+    #goods>li{
+        width: 100%; height: 500px;
+        text-align: center;
+        cursor: pointer;
+    }
+    #goods>li img{
+        width: 100%;
+        transition-duration: 0.5s;
+    } 
+    #goods>li:hover img{opacity: 0.5;}
+    /* SECTION 2 END (상품메뉴) */
+
+    #s3{
+        font-size: 20px;
+        height: 500px;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    #imgBox{
+        height: 45%;
+        background-image: url(../img/conBox03_img01.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #movie{
+        width: 90%; height: 55%;
+        margin: -25% auto;
+    }
+    #s3-catch{
+        position: relative;
+        left: 35%; bottom: 3%;
+        color: white;
+    }
+    #vidBox{
+        width: 90%; height: 490px;
+        background-color: white;
+        padding: 3%;
+        margin: 0 auto;
+    }
+    video{
+        width: 100%; height: 484px;
+        position: relative;
+        bottom: 16%;
+    }
+    #thumb{display: none;}
+    /* SECTION 3 END (비디오) */
+
+    #s4{
+        width: 100%;
+        height: 1300px;
+        background-color: gainsboro;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    #s4-catch{
+        font-size: 20px;
+        position: absolute;
+        bottom: 93%;
+    }
+
+    #list{
+        width: 90%;
+        position: relative;
+        top: 2%;
+    }
+    #list>li{
+        width: 100%;
+        margin-bottom: 20px;
+        cursor: pointer;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .l-text{
+        width: 70%;
+        font-size: 14px;
+        text-align: center;
+
+    }
+    .l-text>h5{font-size: 11px; color: gray;}
+    .l-img{
+        width: 70%;
+        overflow: hidden;
+    }
+    .l-img>img{
+        width: 100%;
+        transition-duration: 0.5s;
+    }
+    .l-img:hover img{transform: scale(1.1);}
+
+    /* SECTION 4 END (뉴스) */
+    footer{
+        height: 300px;
+        background-color: black;
+        font-size: 14px; color: darkgray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    #text{
+        width: 90%; height: 100px;
+        text-align: justify;
+    }
+    #text>span{
+        font-weight: 500; font-size: 15px;
+        color: ghostwhite;
+    }
+    select{
+        width: 20%;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: gainsboro;
+        border-radius: 0px;
+        position: relative;
+        right: 45%; bottom: 35%;
+    }
+    /* FOOTER END */
+
+    /* TOPBOX BUTTON */
+    #topBox{
+        position: fixed;
+        bottom: 50px; right: 50px;
+    }
+}
+
+/* MOB END */

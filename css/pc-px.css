@@ -1,0 +1,254 @@
+@charset "utf-8";
+@media screen and (min-width:1200px) {
+    #wrap{width: 100%;}
+    header, main, section, footer{
+        width: 100%; float: left; position: relative;
+    }
+    
+    header{
+        height: 100px;
+        text-align: center;
+        font: 900 20px/100px '';
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    #logo{
+        width:250px; height: 100%;
+        margin: 0 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #gnb{
+        width: 800px; height: 100%;
+        float: left;
+    }
+    #gnb>li{
+        width: 25%; height: 100%;
+        background-color: white;
+        float: left;
+    }
+    #gnb>li>a{color: gray;}
+    #gnb>li>a:hover{color: black;}
+     /* HEADER END  */
+
+    main{
+        height: 700px;
+        background-image: url(../img/MAIN_1571903003.jpg);
+        background-repeat: no-repeat;
+        background-size: fixed;
+        background-position: center;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    main>h1{
+        position: absolute;
+        top: 100px; left: 900px;
+    }
+    main>h4{
+        position: absolute;
+        top: 200px; left: 900px;
+    }
+    button{
+        padding: 10px 25px;
+        background-color: rgba(100, 100, 100, 0);
+        border: 2px solid black;
+        position: absolute;
+        top: 280px; left: 900px;
+        cursor: pointer;
+        transition-duration: 0.5s;
+    }
+    button:hover{
+        color: ghostwhite;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    /* MAIN END */
+
+    #s1{
+        height: 800px;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(243, 243, 243);
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    #s1-catch{
+        font-size: 20px;
+        position: absolute;
+        bottom: 610px;
+    }
+
+    #s1-catch>span, #s2-catch>span,
+    #s3-catch>span, #s4-catch>span{font-weight: 900;}
+
+    #banner{
+        width: 1200px; height: 452px;
+        position: absolute;
+        top: 200px;
+    }
+    #banner>li{
+        width: 580px; height: 261px;
+        float: left;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    #banner>li:nth-child(2n+1){margin-right: 20px;}
+    #banner>li:nth-child(1), #banner>li:nth-child(2){
+        margin-bottom: 20px;
+    }
+    #banner>li>img{transition-duration: 1.5s;}
+
+    .b-catch{
+        position: relative;
+        left: 30px; bottom: 90px;
+        color: white;
+    }
+    #banner>li:hover img{
+        transform: scale(1.2);
+        filter: brightness(0.5);
+    }
+    #banner>li:hover>.b-catch{
+        animation: bm 1.0s forwards;
+    }
+    #banner>li h2,#banner>li p{transition-duration: 1.5s;}
+    #banner>li:hover h2,#banner>li:hover p{
+        transform: translateY(-20px)
+    }
+
+    /* SECTION 1 END (배너) */
+
+    #s2{
+        height: 1200px;
+        display: flex;
+        justify-content: center;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    #s2-catch{
+        font-size: 20px;
+        position: absolute;
+        bottom: 1010px;
+    }
+    #goods{
+        width: 1200px; height: 1000px;
+        position: absolute;
+        top: 200px;
+    }
+    #goods>li{
+        width: 400px; height: 500px;
+        text-align: center;
+        float: left;
+        cursor: pointer;
+    }
+    #goods>li img{transition-duration: 0.5s;}
+    #goods>li:hover img{opacity: 0.5;}
+    /* SECTION 2 END (상품메뉴) */
+    #s3{
+        font-size: 20px;
+        height: 1200px;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    #imgBox{
+        height: 45%;
+        background-image: url(../img/conBox03_img01.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #movie{
+        width: 1200px; height: 55%;
+        margin: -300px auto;
+    }
+    #s3-catch{
+        position: relative;
+        left: 522.28px; bottom: 10px;
+        color: white;
+    }
+    #vidBox{
+        width: 1000px; height: 600px;
+        background-color: white;
+        padding: 30px;
+        clear: both;
+        margin: 0 auto;
+    }
+    video{
+        width: 1000px; height: 569px;
+    }
+    #thumb{
+        width: 1000px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #thumb>li>video{
+        width: 320px; height: 182px;
+        margin-top: 25px;
+        float: left;
+    }
+
+    /* SECTION 3 END (비디오) */
+
+    #s4{
+        height: 500px;
+        background-color: gainsboro;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    #s4-catch{
+        font-size: 20px;
+        position: absolute;
+        bottom: 410px;
+    }
+
+    #list{
+        width: 1200px; height: 300px;
+    }
+    #list>li{
+        width: 400px; height: 100%;
+        float: left;
+        cursor: pointer;
+    }
+    .l-text{
+        width: 90%;
+        margin: 15px auto;
+        font-size: 15px;
+        text-align: justify;
+    }
+    .l-text>h5{font-size: 12px; color: gray;}
+    .l-img{
+        width: 389px; height: 263px;
+        overflow: hidden;
+    }
+    .l-img>img{transition-duration: 0.5s;}
+    .l-img:hover img{transform: scale(1.1);}
+
+    /* SECTION 4 END (뉴스) */
+    footer{
+        height: 200px;
+        background-color: black;
+        font-size: 14px; color: darkgray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    #text{
+        width: 1200px; height: 100px;
+    }
+    #text>span{
+        font-weight: 500; font-size: 15px;
+        color: ghostwhite;
+    }
+    select{
+        width: 150px;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: gainsboro;
+        border-radius: 0px;
+    }
+    /* FOOTER END */
+
+    /* TOPBOX BUTTON */
+    #topBox{
+        position: fixed;
+        bottom: 50px; right: 50px;
+    }
+}
